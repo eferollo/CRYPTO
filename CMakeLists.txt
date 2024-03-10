@@ -3,4 +3,4 @@ project(01_rand C)
 
 set(CMAKE_C_STANDARD 11)
 link_libraries(crypto)
-add_executable(01_rand main.c)
+add_executable(01_rand OPENSSL/01_rand/rand.c)
