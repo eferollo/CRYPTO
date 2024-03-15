@@ -14,3 +14,7 @@ add_executable(03_hash2 OPENSSL/03_dgst/hash2.c)
 add_executable(03_hmac OPENSSL/03_dgst/hmac.c)
 add_executable(03_hmac2 OPENSSL/03_dgst/hmac2.c)
 add_executable(03_hmac_verify OPENSSL/03_dgst/hmac_verification.c)
+
+add_executable(04_bignum OPENSSL/04_bignum/bignum.c)
+add_executable(04_bignum2 OPENSSL/04_bignum/bignum2.c)
+add_executable(04_prime OPENSSL/04_bignum/prime.c)
