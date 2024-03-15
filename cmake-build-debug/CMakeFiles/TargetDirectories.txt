@@ -2,5 +2,10 @@
 /home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/02_enc.dir
 /home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/02_enc2.dir
 /home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/02_enc3.dir
+/home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/03_hash.dir
+/home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/03_hash2.dir
+/home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/03_hmac.dir
+/home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/03_hmac2.dir
+/home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/03_hmac_verify.dir
 /home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/rebuild_cache.dir

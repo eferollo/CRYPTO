@@ -168,6 +168,166 @@ build 02_enc3: C_EXECUTABLE_LINKER__02_enc3_Debug CMakeFiles/02_enc3.dir/OPENSSL
   TARGET_FILE = 02_enc3
   TARGET_PDB = 02_enc3.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 03_hash
+
+
+#############################################
+# Order-only phony target for 03_hash
+
+build cmake_object_order_depends_target_03_hash: phony || CMakeFiles/03_hash.dir
+
+build CMakeFiles/03_hash.dir/OPENSSL/03_dgst/hash.c.o: C_COMPILER__03_hash_unscanned_Debug /home/efe/MAGISTRALE/1$ ANNO/CRYPTO/OPENSSL/03_dgst/hash.c || cmake_object_order_depends_target_03_hash
+  DEP_FILE = CMakeFiles/03_hash.dir/OPENSSL/03_dgst/hash.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/03_hash.dir
+  OBJECT_FILE_DIR = CMakeFiles/03_hash.dir/OPENSSL/03_dgst
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 03_hash
+
+
+#############################################
+# Link the executable 03_hash
+
+build 03_hash: C_EXECUTABLE_LINKER__03_hash_Debug CMakeFiles/03_hash.dir/OPENSSL/03_dgst/hash.c.o
+  FLAGS = -g
+  LINK_LIBRARIES = -lcrypto
+  OBJECT_DIR = CMakeFiles/03_hash.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 03_hash
+  TARGET_PDB = 03_hash.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 03_hash2
+
+
+#############################################
+# Order-only phony target for 03_hash2
+
+build cmake_object_order_depends_target_03_hash2: phony || CMakeFiles/03_hash2.dir
+
+build CMakeFiles/03_hash2.dir/OPENSSL/03_dgst/hash2.c.o: C_COMPILER__03_hash2_unscanned_Debug /home/efe/MAGISTRALE/1$ ANNO/CRYPTO/OPENSSL/03_dgst/hash2.c || cmake_object_order_depends_target_03_hash2
+  DEP_FILE = CMakeFiles/03_hash2.dir/OPENSSL/03_dgst/hash2.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/03_hash2.dir
+  OBJECT_FILE_DIR = CMakeFiles/03_hash2.dir/OPENSSL/03_dgst
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 03_hash2
+
+
+#############################################
+# Link the executable 03_hash2
+
+build 03_hash2: C_EXECUTABLE_LINKER__03_hash2_Debug CMakeFiles/03_hash2.dir/OPENSSL/03_dgst/hash2.c.o
+  FLAGS = -g
+  LINK_LIBRARIES = -lcrypto
+  OBJECT_DIR = CMakeFiles/03_hash2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 03_hash2
+  TARGET_PDB = 03_hash2.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 03_hmac
+
+
+#############################################
+# Order-only phony target for 03_hmac
+
+build cmake_object_order_depends_target_03_hmac: phony || CMakeFiles/03_hmac.dir
+
+build CMakeFiles/03_hmac.dir/OPENSSL/03_dgst/hmac.c.o: C_COMPILER__03_hmac_unscanned_Debug /home/efe/MAGISTRALE/1$ ANNO/CRYPTO/OPENSSL/03_dgst/hmac.c || cmake_object_order_depends_target_03_hmac
+  DEP_FILE = CMakeFiles/03_hmac.dir/OPENSSL/03_dgst/hmac.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/03_hmac.dir
+  OBJECT_FILE_DIR = CMakeFiles/03_hmac.dir/OPENSSL/03_dgst
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 03_hmac
+
+
+#############################################
+# Link the executable 03_hmac
+
+build 03_hmac: C_EXECUTABLE_LINKER__03_hmac_Debug CMakeFiles/03_hmac.dir/OPENSSL/03_dgst/hmac.c.o
+  FLAGS = -g
+  LINK_LIBRARIES = -lcrypto
+  OBJECT_DIR = CMakeFiles/03_hmac.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 03_hmac
+  TARGET_PDB = 03_hmac.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 03_hmac2
+
+
+#############################################
+# Order-only phony target for 03_hmac2
+
+build cmake_object_order_depends_target_03_hmac2: phony || CMakeFiles/03_hmac2.dir
+
+build CMakeFiles/03_hmac2.dir/OPENSSL/03_dgst/hmac2.c.o: C_COMPILER__03_hmac2_unscanned_Debug /home/efe/MAGISTRALE/1$ ANNO/CRYPTO/OPENSSL/03_dgst/hmac2.c || cmake_object_order_depends_target_03_hmac2
+  DEP_FILE = CMakeFiles/03_hmac2.dir/OPENSSL/03_dgst/hmac2.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/03_hmac2.dir
+  OBJECT_FILE_DIR = CMakeFiles/03_hmac2.dir/OPENSSL/03_dgst
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 03_hmac2
+
+
+#############################################
+# Link the executable 03_hmac2
+
+build 03_hmac2: C_EXECUTABLE_LINKER__03_hmac2_Debug CMakeFiles/03_hmac2.dir/OPENSSL/03_dgst/hmac2.c.o
+  FLAGS = -g
+  LINK_LIBRARIES = -lcrypto
+  OBJECT_DIR = CMakeFiles/03_hmac2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 03_hmac2
+  TARGET_PDB = 03_hmac2.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 03_hmac_verify
+
+
+#############################################
+# Order-only phony target for 03_hmac_verify
+
+build cmake_object_order_depends_target_03_hmac_verify: phony || CMakeFiles/03_hmac_verify.dir
+
+build CMakeFiles/03_hmac_verify.dir/OPENSSL/03_dgst/hmac_verification.c.o: C_COMPILER__03_hmac_verify_unscanned_Debug /home/efe/MAGISTRALE/1$ ANNO/CRYPTO/OPENSSL/03_dgst/hmac_verification.c || cmake_object_order_depends_target_03_hmac_verify
+  DEP_FILE = CMakeFiles/03_hmac_verify.dir/OPENSSL/03_dgst/hmac_verification.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/03_hmac_verify.dir
+  OBJECT_FILE_DIR = CMakeFiles/03_hmac_verify.dir/OPENSSL/03_dgst
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 03_hmac_verify
+
+
+#############################################
+# Link the executable 03_hmac_verify
+
+build 03_hmac_verify: C_EXECUTABLE_LINKER__03_hmac_verify_Debug CMakeFiles/03_hmac_verify.dir/OPENSSL/03_dgst/hmac_verification.c.o
+  FLAGS = -g
+  LINK_LIBRARIES = -lcrypto
+  OBJECT_DIR = CMakeFiles/03_hmac_verify.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 03_hmac_verify
+  TARGET_PDB = 03_hmac_verify.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -202,7 +362,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug
 
-build all: phony 01_rand 02_enc 02_enc2 02_enc3
+build all: phony 01_rand 02_enc 02_enc2 02_enc3 03_hash 03_hash2 03_hmac 03_hmac2 03_hmac_verify
 
 # =============================================================================
 # Built-in targets
