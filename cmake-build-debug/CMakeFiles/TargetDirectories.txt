@@ -10,5 +10,7 @@
 /home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/04_bignum.dir
 /home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/04_bignum2.dir
 /home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/04_prime.dir
+/home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/05_rsa_keygen.dir
+/home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/05_rsa_sign.dir
 /home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/rebuild_cache.dir

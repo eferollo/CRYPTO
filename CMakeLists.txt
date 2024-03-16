@@ -18,3 +18,6 @@ add_executable(03_hmac_verify OPENSSL/03_dgst/hmac_verification.c)
 add_executable(04_bignum OPENSSL/04_bignum/bignum.c)
 add_executable(04_bignum2 OPENSSL/04_bignum/bignum2.c)
 add_executable(04_prime OPENSSL/04_bignum/prime.c)
+
+add_executable(05_rsa_keygen OPENSSL/05_asym/rsa_keygen.c)
+add_executable(05_rsa_sign OPENSSL/05_asym/rsa_sign.c)

@@ -424,6 +424,70 @@ build 04_prime: C_EXECUTABLE_LINKER__04_prime_Debug CMakeFiles/04_prime.dir/OPEN
   TARGET_FILE = 04_prime
   TARGET_PDB = 04_prime.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 05_rsa_keygen
+
+
+#############################################
+# Order-only phony target for 05_rsa_keygen
+
+build cmake_object_order_depends_target_05_rsa_keygen: phony || CMakeFiles/05_rsa_keygen.dir
+
+build CMakeFiles/05_rsa_keygen.dir/OPENSSL/05_asym/rsa_keygen.c.o: C_COMPILER__05_rsa_keygen_unscanned_Debug /home/efe/MAGISTRALE/1$ ANNO/CRYPTO/OPENSSL/05_asym/rsa_keygen.c || cmake_object_order_depends_target_05_rsa_keygen
+  DEP_FILE = CMakeFiles/05_rsa_keygen.dir/OPENSSL/05_asym/rsa_keygen.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/05_rsa_keygen.dir
+  OBJECT_FILE_DIR = CMakeFiles/05_rsa_keygen.dir/OPENSSL/05_asym
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 05_rsa_keygen
+
+
+#############################################
+# Link the executable 05_rsa_keygen
+
+build 05_rsa_keygen: C_EXECUTABLE_LINKER__05_rsa_keygen_Debug CMakeFiles/05_rsa_keygen.dir/OPENSSL/05_asym/rsa_keygen.c.o
+  FLAGS = -g
+  LINK_LIBRARIES = -lcrypto
+  OBJECT_DIR = CMakeFiles/05_rsa_keygen.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 05_rsa_keygen
+  TARGET_PDB = 05_rsa_keygen.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 05_rsa_sign
+
+
+#############################################
+# Order-only phony target for 05_rsa_sign
+
+build cmake_object_order_depends_target_05_rsa_sign: phony || CMakeFiles/05_rsa_sign.dir
+
+build CMakeFiles/05_rsa_sign.dir/OPENSSL/05_asym/rsa_sign.c.o: C_COMPILER__05_rsa_sign_unscanned_Debug /home/efe/MAGISTRALE/1$ ANNO/CRYPTO/OPENSSL/05_asym/rsa_sign.c || cmake_object_order_depends_target_05_rsa_sign
+  DEP_FILE = CMakeFiles/05_rsa_sign.dir/OPENSSL/05_asym/rsa_sign.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/05_rsa_sign.dir
+  OBJECT_FILE_DIR = CMakeFiles/05_rsa_sign.dir/OPENSSL/05_asym
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 05_rsa_sign
+
+
+#############################################
+# Link the executable 05_rsa_sign
+
+build 05_rsa_sign: C_EXECUTABLE_LINKER__05_rsa_sign_Debug CMakeFiles/05_rsa_sign.dir/OPENSSL/05_asym/rsa_sign.c.o
+  FLAGS = -g
+  LINK_LIBRARIES = -lcrypto
+  OBJECT_DIR = CMakeFiles/05_rsa_sign.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 05_rsa_sign
+  TARGET_PDB = 05_rsa_sign.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -458,7 +522,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug
 
-build all: phony 01_rand 02_enc 02_enc2 02_enc3 03_hash 03_hash2 03_hmac 03_hmac2 03_hmac_verify 04_bignum 04_bignum2 04_prime
+build all: phony 01_rand 02_enc 02_enc2 02_enc3 03_hash 03_hash2 03_hmac 03_hmac2 03_hmac_verify 04_bignum 04_bignum2 04_prime 05_rsa_keygen 05_rsa_sign
 
 # =============================================================================
 # Built-in targets
