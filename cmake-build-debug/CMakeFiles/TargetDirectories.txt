@@ -12,5 +12,15 @@
 /home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/04_prime.dir
 /home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/05_rsa_keygen.dir
 /home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/05_rsa_sign.dir
+/home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/bytewise_op.dir
+/home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/keyed_digest.dir
+/home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/changeDGST.dir
+/home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/first_hmac.dir
+/home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/first_hmac2.dir
+/home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/padding.dir
+/home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/name_cipher.dir
+/home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/first_dec.dir
+/home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/guess_algo.dir
+/home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/guess_what.dir
 /home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug/CMakeFiles/rebuild_cache.dir

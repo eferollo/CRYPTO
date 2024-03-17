@@ -2,11 +2,7 @@
 #include <string.h>
 #include <openssl/err.h>
 #include <openssl/evp.h>
-
 #define MAXBUF 1024
-/*
- * First parameter is the name of the file to hash
- */
 
 void handle_errors(){
     ERR_print_errors_fp(stderr);
@@ -14,7 +10,6 @@ void handle_errors(){
 }
 
 int main(int argc, char **argv){
-
     if(argc != 2){
         fprintf(stderr,"Invalid parameters num. Usage: %s string_to_hash\n", argv[0]);
         exit(-1);
@@ -29,23 +24,27 @@ int main(int argc, char **argv){
     ERR_load_crypto_strings();
     OpenSSL_add_all_algorithms();
 
+    unsigned char secret[] = "this_is_my_secret";
     EVP_MD_CTX *md;
     md = EVP_MD_CTX_new();
 
     if(md == NULL)
         handle_errors();
 
-    if(!EVP_DigestInit(md, EVP_sha1()))
+    if(!EVP_DigestInit(md, EVP_sha512()))
         handle_errors();
 
     unsigned char buffer[MAXBUF];
     int n_read;
+
+    EVP_DigestUpdate(md, secret, strlen(secret));
     while( (n_read = fread(buffer, 1, MAXBUF, f_in)) > 0){
         if(!EVP_DigestUpdate(md, buffer, n_read))
             handle_errors();
     }
+    EVP_DigestUpdate(md, secret, strlen(secret));
 
-    unsigned char md_value[EVP_MD_size(EVP_sha1())];
+    unsigned char md_value[EVP_MD_size(EVP_sha512())];
     int md_len;
 
     if(!EVP_DigestFinal_ex(md, md_value, &md_len))
@@ -62,4 +61,3 @@ int main(int argc, char **argv){
     printf("\n");
     return 0;
 }
-

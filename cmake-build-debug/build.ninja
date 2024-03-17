@@ -488,6 +488,326 @@ build 05_rsa_sign: C_EXECUTABLE_LINKER__05_rsa_sign_Debug CMakeFiles/05_rsa_sign
   TARGET_FILE = 05_rsa_sign
   TARGET_PDB = 05_rsa_sign.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target bytewise_op
+
+
+#############################################
+# Order-only phony target for bytewise_op
+
+build cmake_object_order_depends_target_bytewise_op: phony || CMakeFiles/bytewise_op.dir
+
+build CMakeFiles/bytewise_op.dir/CTF/openssl-rand/main.c.o: C_COMPILER__bytewise_op_unscanned_Debug /home/efe/MAGISTRALE/1$ ANNO/CRYPTO/CTF/openssl-rand/main.c || cmake_object_order_depends_target_bytewise_op
+  DEP_FILE = CMakeFiles/bytewise_op.dir/CTF/openssl-rand/main.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/bytewise_op.dir
+  OBJECT_FILE_DIR = CMakeFiles/bytewise_op.dir/CTF/openssl-rand
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target bytewise_op
+
+
+#############################################
+# Link the executable bytewise_op
+
+build bytewise_op: C_EXECUTABLE_LINKER__bytewise_op_Debug CMakeFiles/bytewise_op.dir/CTF/openssl-rand/main.c.o
+  FLAGS = -g
+  LINK_LIBRARIES = -lcrypto
+  OBJECT_DIR = CMakeFiles/bytewise_op.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = bytewise_op
+  TARGET_PDB = bytewise_op.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target keyed_digest
+
+
+#############################################
+# Order-only phony target for keyed_digest
+
+build cmake_object_order_depends_target_keyed_digest: phony || CMakeFiles/keyed_digest.dir
+
+build CMakeFiles/keyed_digest.dir/CTF/openssl-dgst/main.c.o: C_COMPILER__keyed_digest_unscanned_Debug /home/efe/MAGISTRALE/1$ ANNO/CRYPTO/CTF/openssl-dgst/main.c || cmake_object_order_depends_target_keyed_digest
+  DEP_FILE = CMakeFiles/keyed_digest.dir/CTF/openssl-dgst/main.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/keyed_digest.dir
+  OBJECT_FILE_DIR = CMakeFiles/keyed_digest.dir/CTF/openssl-dgst
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target keyed_digest
+
+
+#############################################
+# Link the executable keyed_digest
+
+build keyed_digest: C_EXECUTABLE_LINKER__keyed_digest_Debug CMakeFiles/keyed_digest.dir/CTF/openssl-dgst/main.c.o
+  FLAGS = -g
+  LINK_LIBRARIES = -lcrypto
+  OBJECT_DIR = CMakeFiles/keyed_digest.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = keyed_digest
+  TARGET_PDB = keyed_digest.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target changeDGST
+
+
+#############################################
+# Order-only phony target for changeDGST
+
+build cmake_object_order_depends_target_changeDGST: phony || CMakeFiles/changeDGST.dir
+
+build CMakeFiles/changeDGST.dir/CTF/openssl-dgst/hash3.c.o: C_COMPILER__changeDGST_unscanned_Debug /home/efe/MAGISTRALE/1$ ANNO/CRYPTO/CTF/openssl-dgst/hash3.c || cmake_object_order_depends_target_changeDGST
+  DEP_FILE = CMakeFiles/changeDGST.dir/CTF/openssl-dgst/hash3.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/changeDGST.dir
+  OBJECT_FILE_DIR = CMakeFiles/changeDGST.dir/CTF/openssl-dgst
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target changeDGST
+
+
+#############################################
+# Link the executable changeDGST
+
+build changeDGST: C_EXECUTABLE_LINKER__changeDGST_Debug CMakeFiles/changeDGST.dir/CTF/openssl-dgst/hash3.c.o
+  FLAGS = -g
+  LINK_LIBRARIES = -lcrypto
+  OBJECT_DIR = CMakeFiles/changeDGST.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = changeDGST
+  TARGET_PDB = changeDGST.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target first_hmac
+
+
+#############################################
+# Order-only phony target for first_hmac
+
+build cmake_object_order_depends_target_first_hmac: phony || CMakeFiles/first_hmac.dir
+
+build CMakeFiles/first_hmac.dir/CTF/openssl-hmac/main.c.o: C_COMPILER__first_hmac_unscanned_Debug /home/efe/MAGISTRALE/1$ ANNO/CRYPTO/CTF/openssl-hmac/main.c || cmake_object_order_depends_target_first_hmac
+  DEP_FILE = CMakeFiles/first_hmac.dir/CTF/openssl-hmac/main.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/first_hmac.dir
+  OBJECT_FILE_DIR = CMakeFiles/first_hmac.dir/CTF/openssl-hmac
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target first_hmac
+
+
+#############################################
+# Link the executable first_hmac
+
+build first_hmac: C_EXECUTABLE_LINKER__first_hmac_Debug CMakeFiles/first_hmac.dir/CTF/openssl-hmac/main.c.o
+  FLAGS = -g
+  LINK_LIBRARIES = -lcrypto
+  OBJECT_DIR = CMakeFiles/first_hmac.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = first_hmac
+  TARGET_PDB = first_hmac.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target first_hmac2
+
+
+#############################################
+# Order-only phony target for first_hmac2
+
+build cmake_object_order_depends_target_first_hmac2: phony || CMakeFiles/first_hmac2.dir
+
+build CMakeFiles/first_hmac2.dir/CTF/openssl-hmac/main2.c.o: C_COMPILER__first_hmac2_unscanned_Debug /home/efe/MAGISTRALE/1$ ANNO/CRYPTO/CTF/openssl-hmac/main2.c || cmake_object_order_depends_target_first_hmac2
+  DEP_FILE = CMakeFiles/first_hmac2.dir/CTF/openssl-hmac/main2.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/first_hmac2.dir
+  OBJECT_FILE_DIR = CMakeFiles/first_hmac2.dir/CTF/openssl-hmac
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target first_hmac2
+
+
+#############################################
+# Link the executable first_hmac2
+
+build first_hmac2: C_EXECUTABLE_LINKER__first_hmac2_Debug CMakeFiles/first_hmac2.dir/CTF/openssl-hmac/main2.c.o
+  FLAGS = -g
+  LINK_LIBRARIES = -lcrypto
+  OBJECT_DIR = CMakeFiles/first_hmac2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = first_hmac2
+  TARGET_PDB = first_hmac2.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target padding
+
+
+#############################################
+# Order-only phony target for padding
+
+build cmake_object_order_depends_target_padding: phony || CMakeFiles/padding.dir
+
+build CMakeFiles/padding.dir/CTF/openssl-enc/enc1_nopadding.c.o: C_COMPILER__padding_unscanned_Debug /home/efe/MAGISTRALE/1$ ANNO/CRYPTO/CTF/openssl-enc/enc1_nopadding.c || cmake_object_order_depends_target_padding
+  DEP_FILE = CMakeFiles/padding.dir/CTF/openssl-enc/enc1_nopadding.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/padding.dir
+  OBJECT_FILE_DIR = CMakeFiles/padding.dir/CTF/openssl-enc
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target padding
+
+
+#############################################
+# Link the executable padding
+
+build padding: C_EXECUTABLE_LINKER__padding_Debug CMakeFiles/padding.dir/CTF/openssl-enc/enc1_nopadding.c.o
+  FLAGS = -g
+  LINK_LIBRARIES = -lcrypto
+  OBJECT_DIR = CMakeFiles/padding.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = padding
+  TARGET_PDB = padding.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target name_cipher
+
+
+#############################################
+# Order-only phony target for name_cipher
+
+build cmake_object_order_depends_target_name_cipher: phony || CMakeFiles/name_cipher.dir
+
+build CMakeFiles/name_cipher.dir/CTF/openssl-enc/name_cipher.c.o: C_COMPILER__name_cipher_unscanned_Debug /home/efe/MAGISTRALE/1$ ANNO/CRYPTO/CTF/openssl-enc/name_cipher.c || cmake_object_order_depends_target_name_cipher
+  DEP_FILE = CMakeFiles/name_cipher.dir/CTF/openssl-enc/name_cipher.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/name_cipher.dir
+  OBJECT_FILE_DIR = CMakeFiles/name_cipher.dir/CTF/openssl-enc
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target name_cipher
+
+
+#############################################
+# Link the executable name_cipher
+
+build name_cipher: C_EXECUTABLE_LINKER__name_cipher_Debug CMakeFiles/name_cipher.dir/CTF/openssl-enc/name_cipher.c.o
+  FLAGS = -g
+  LINK_LIBRARIES = -lcrypto
+  OBJECT_DIR = CMakeFiles/name_cipher.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = name_cipher
+  TARGET_PDB = name_cipher.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target first_dec
+
+
+#############################################
+# Order-only phony target for first_dec
+
+build cmake_object_order_depends_target_first_dec: phony || CMakeFiles/first_dec.dir
+
+build CMakeFiles/first_dec.dir/CTF/openssl-enc/dec1_firstdec.c.o: C_COMPILER__first_dec_unscanned_Debug /home/efe/MAGISTRALE/1$ ANNO/CRYPTO/CTF/openssl-enc/dec1_firstdec.c || cmake_object_order_depends_target_first_dec
+  DEP_FILE = CMakeFiles/first_dec.dir/CTF/openssl-enc/dec1_firstdec.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/first_dec.dir
+  OBJECT_FILE_DIR = CMakeFiles/first_dec.dir/CTF/openssl-enc
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target first_dec
+
+
+#############################################
+# Link the executable first_dec
+
+build first_dec: C_EXECUTABLE_LINKER__first_dec_Debug CMakeFiles/first_dec.dir/CTF/openssl-enc/dec1_firstdec.c.o
+  FLAGS = -g
+  LINK_LIBRARIES = -lcrypto
+  OBJECT_DIR = CMakeFiles/first_dec.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = first_dec
+  TARGET_PDB = first_dec.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target guess_algo
+
+
+#############################################
+# Order-only phony target for guess_algo
+
+build cmake_object_order_depends_target_guess_algo: phony || CMakeFiles/guess_algo.dir
+
+build CMakeFiles/guess_algo.dir/CTF/openssl-enc/dec1_guessalgo.c.o: C_COMPILER__guess_algo_unscanned_Debug /home/efe/MAGISTRALE/1$ ANNO/CRYPTO/CTF/openssl-enc/dec1_guessalgo.c || cmake_object_order_depends_target_guess_algo
+  DEP_FILE = CMakeFiles/guess_algo.dir/CTF/openssl-enc/dec1_guessalgo.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/guess_algo.dir
+  OBJECT_FILE_DIR = CMakeFiles/guess_algo.dir/CTF/openssl-enc
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target guess_algo
+
+
+#############################################
+# Link the executable guess_algo
+
+build guess_algo: C_EXECUTABLE_LINKER__guess_algo_Debug CMakeFiles/guess_algo.dir/CTF/openssl-enc/dec1_guessalgo.c.o
+  FLAGS = -g
+  LINK_LIBRARIES = -lcrypto
+  OBJECT_DIR = CMakeFiles/guess_algo.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = guess_algo
+  TARGET_PDB = guess_algo.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target guess_what
+
+
+#############################################
+# Order-only phony target for guess_what
+
+build cmake_object_order_depends_target_guess_what: phony || CMakeFiles/guess_what.dir
+
+build CMakeFiles/guess_what.dir/CTF/openssl-asym/guess_what.c.o: C_COMPILER__guess_what_unscanned_Debug /home/efe/MAGISTRALE/1$ ANNO/CRYPTO/CTF/openssl-asym/guess_what.c || cmake_object_order_depends_target_guess_what
+  DEP_FILE = CMakeFiles/guess_what.dir/CTF/openssl-asym/guess_what.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/guess_what.dir
+  OBJECT_FILE_DIR = CMakeFiles/guess_what.dir/CTF/openssl-asym
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target guess_what
+
+
+#############################################
+# Link the executable guess_what
+
+build guess_what: C_EXECUTABLE_LINKER__guess_what_Debug CMakeFiles/guess_what.dir/CTF/openssl-asym/guess_what.c.o
+  FLAGS = -g
+  LINK_LIBRARIES = -lcrypto
+  OBJECT_DIR = CMakeFiles/guess_what.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = guess_what
+  TARGET_PDB = guess_what.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -522,7 +842,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/efe/MAGISTRALE/1 ANNO/CRYPTO/cmake-build-debug
 
-build all: phony 01_rand 02_enc 02_enc2 02_enc3 03_hash 03_hash2 03_hmac 03_hmac2 03_hmac_verify 04_bignum 04_bignum2 04_prime 05_rsa_keygen 05_rsa_sign
+build all: phony 01_rand 02_enc 02_enc2 02_enc3 03_hash 03_hash2 03_hmac 03_hmac2 03_hmac_verify 04_bignum 04_bignum2 04_prime 05_rsa_keygen 05_rsa_sign bytewise_op keyed_digest changeDGST first_hmac first_hmac2 padding name_cipher first_dec guess_algo guess_what
 
 # =============================================================================
 # Built-in targets
