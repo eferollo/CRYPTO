@@ -7,7 +7,7 @@
 
 int main() {
 
-    // every ciphertext decoded from base64
+    // every ciphertext decoded from base64 -> echo 'jyS3NIBqen2CWpDI2jkSu+z93NkDbWkUMitg2Q==' | base64 -d | xxd -p
     unsigned char key_hex[] = "0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF";
     unsigned char iv_hex[] = "11111111111111112222222222222222";
     const char *ciphertext_hex = "8f24b734806a7a7d825a90c8da3912bbecfddcd9036d6914322b60d9";

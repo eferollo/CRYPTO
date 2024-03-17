@@ -24,17 +24,17 @@ add_executable(05_rsa_sign OPENSSL/05_asym/rsa_sign.c)
 
 # CTF
 
-add_executable(bytewise_op CTF/openssl-rand/bytewise_op.c)
+add_executable(CTF_bytewise_op CTF/openssl-rand/bytewise_op.c)
 
-add_executable(keyed_digest CTF/openssl-dgst/keyed_dgst.c)
-add_executable(changeDGST CTF/openssl-dgst/hash3.c)
+add_executable(CTF_keyed_digest CTF/openssl-dgst/keyed_dgst.c)
+add_executable(CTF_changeDGST CTF/openssl-dgst/hash3.c)
 
-add_executable(first_hmac CTF/openssl-hmac/firsthmac.c)
-add_executable(first_hmac_deprecated CTF/openssl-hmac/firsthmac_deprecated.c)
+add_executable(CTF_first_hmac CTF/openssl-hmac/firsthmac.c)
+add_executable(CTF_first_hmac_deprecated CTF/openssl-hmac/firsthmac_deprecated.c)
 
-add_executable(padding CTF/openssl-enc/enc1_nopadding.c)
-add_executable(name_cipher CTF/openssl-enc/name_cipher.c)
-add_executable(first_dec CTF/openssl-enc/dec1_firstdec.c)
-add_executable(guess_algo CTF/openssl-enc/dec1_guessalgo.c)
+add_executable(CTF_padding CTF/openssl-enc/enc1_nopadding.c)
+add_executable(CTF_name_cipher CTF/openssl-enc/name_cipher.c)
+add_executable(CTF_first_dec CTF/openssl-enc/dec1_firstdec.c)
+add_executable(CTF_guess_algo CTF/openssl-enc/dec1_guessalgo.c)
 
-add_executable(guess_what CTF/openssl-asym/guess_what.c)
+add_executable(CTF_guess_what CTF/openssl-asym/guess_what.c)
