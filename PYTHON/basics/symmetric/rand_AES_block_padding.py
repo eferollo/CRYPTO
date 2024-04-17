@@ -20,12 +20,16 @@ if __name__ == '__main__':
     print(decrypted_data)
 
     # encryption with padding
-    plaintext = b'Unaligned string...'
+    plaintext = b'Unaligned string'
     print(len(plaintext))
     cipher_enc = AES.new(key, AES.MODE_CBC, IV)
-    padded_data = pad(plaintext, AES.block_size)
-    print(padded_data)
-    ciphertext = cipher_enc.encrypt(padded_data)
+    # padded_data = pad(plaintext, AES.block_size)
+    print(plaintext) # revert to padded_data
+    ciphertext = cipher_enc.encrypt(plaintext) # revert to padded_data
+
+    plaintext_2 = b'more text to encrypt'
+    padded_data = pad(plaintext_2, AES.block_size)
+    ciphertext += cipher_enc.encrypt(padded_data)
     print(ciphertext)
 
     # decryption with padding
