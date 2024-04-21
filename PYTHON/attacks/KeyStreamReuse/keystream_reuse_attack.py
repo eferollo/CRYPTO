@@ -180,7 +180,3 @@ keystream[2] = keystream[2] ^ mask2
 for c in ciphertexts:
     l = min(len(keystream), len(c))
     print(strxor(c[:l], keystream[:l]))
-
-
-
-
