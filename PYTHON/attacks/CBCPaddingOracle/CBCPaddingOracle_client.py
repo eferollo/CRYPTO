@@ -4,7 +4,6 @@ os.environ['PWNLIB_NOTERM'] = 'True'  # Configuration patch to allow pwntools to
 os.environ['PWNLIB_SILENT'] = 'True'
 from pwn import *
 
-
 from myconfig import HOST,PORT
 from mydata import cbc_oracle_iv as iv
 from mydata import cbc_oracle_ciphertext as ciphertext
