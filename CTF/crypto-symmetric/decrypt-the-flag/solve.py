@@ -40,7 +40,8 @@ keystream = bytearray()
 for p, c in zip(plaintext2, ciphertext_2):
     keystream.append(p ^ c)
 
-# to decrypt the flag ciphertext we can now xor it with the keystream ad get back the flag plaintext
+# to decrypt the flag ciphertext we can now xor it with the keystream (which is the same beacuse of the same nonce)
+# and get back the flag plaintext
 flag = bytearray()
 for k, c in zip(keystream, ciphertext):
     flag.append(k ^ c)
