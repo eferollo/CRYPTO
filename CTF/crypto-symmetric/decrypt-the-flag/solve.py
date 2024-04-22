@@ -1,14 +1,7 @@
-import json
 import os
-
-import random
-
-from Crypto.Util.number import long_to_bytes
-
 os.environ['PWNLIB_NOTERM'] = 'True'
 os.environ['PWNLIB_SILENT'] = 'True'
 import pwn
-import base64
 
 server = pwn.remote("130.192.5.212", 6561)
 
@@ -47,4 +40,3 @@ for k, c in zip(keystream, ciphertext):
     flag.append(k ^ c)
 
 print(flag.decode())
-
