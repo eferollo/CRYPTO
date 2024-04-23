@@ -73,3 +73,5 @@ keystream[69] = keystream[69] ^ ord('Y') ^ ord('s')
 for c in ciphertexts:
     l = min(len(keystream),len(c))
     print(strxor(c[:l],keystream[:l]))
+
+# also try to use mtp hacker-manifesto.enc
