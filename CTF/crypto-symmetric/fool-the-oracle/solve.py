@@ -20,7 +20,7 @@ import pwn
     (try)         (flag shift sx 1) 
     15+1 | 16 | 16 | 16 |
       |               |-> each time a new byte enters and all of it is compared with shifted secret  
-       -> secret is shifted sx 1 (secret[-15:])
+       -> secret is shifted dx 1 (secret[-15:])
 '''
 
 server = pwn.remote("130.192.5.212", 6541)
