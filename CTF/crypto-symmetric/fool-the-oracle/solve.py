@@ -19,8 +19,8 @@ import pwn
     after reaching the first full block size 
     (try)         (flag shift sx 1) 
     15+1 | 16 | 16 | 16 |
-      |               |-> each time a new byte enters and al of it is compared with shifted secret  
-       -> secret is shifted sx 1 (secret[-15:] 
+      |               |-> each time a new byte enters and all of it is compared with shifted secret  
+       -> secret is shifted sx 1 (secret[-15:])
 '''
 
 server = pwn.remote("130.192.5.212", 6541)
@@ -58,7 +58,7 @@ for i in range(secret_len):
         ciphertext = bytes.fromhex(ciphertext)
         #print(ciphertext)
 
-        # check if the first block and the 4h block are equal (ECB)
+        # check if the 1st block and the 4th block are equal (ECB)
         if ciphertext[:16] == ciphertext[blocks_size: blocks_size+16]:
             secret += guess.encode()
             print('----------------------')
