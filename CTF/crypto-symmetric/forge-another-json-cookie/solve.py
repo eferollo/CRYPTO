@@ -9,15 +9,16 @@ import base64
 
 server = pwn.remote("130.192.5.212", 6551)
 
-true = b"true}"
+true = b'true}'
 
 username = b'{"username": "'
-role = b'", "admin": '
+role = b', "admin": '
 
 pad1 = b'.' * (AES.block_size - len(username))
-pad2 = pad(true, AES.block_size)
+pad2 = pad(true, AES.block_size+(AES.block_size-len(role)))
 pad3 = b'.' * (AES.block_size - len(role))
 tosend = pad1+pad2
+print(tosend.decode())
 
 js = json.dumps({
     "username": tosend.decode(),
@@ -25,6 +26,7 @@ js = json.dumps({
 })
 
 print(js)
+# {"username": "..true}\u000f\u000f\u000f\u000f\u000f\u000f\u000f\u000f\u000f\u000f\u000f\u000f\u000f\u000f\u000f", "admin": false}
 
 # Hi, please tell me your name! -> provide name
 print(server.recvline().decode())
@@ -33,7 +35,7 @@ server.sendline(tosend)
 # Get the plaintext token
 plain_token = server.recvline().decode().strip().split(" ")[-1]
 plain_token = base64.b64decode(plain_token)
-
+print(len(plain_token))
 # construct token
 token = plain_token[:48] + plain_token[16:32]
 token = base64.b64encode(token).decode()
