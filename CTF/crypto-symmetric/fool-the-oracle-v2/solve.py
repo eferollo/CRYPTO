@@ -32,7 +32,7 @@ secret = b''
 
 # for each char of the secret
 for i in range(secret_len):
-
+    # the server applies a padding of 5 that must be added in front of the message to encrypt
     pad_block = b"/" * (AES.block_size - 5)
     # compute the final pad of the remaining undiscovered bytes to add at the end of the message, -1 to leave space for the char to try
     pad = (blocks_size - i - 1) * b'/'

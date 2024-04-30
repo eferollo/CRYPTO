@@ -25,18 +25,20 @@ keydate_cipher = cookie[19:29]  # get the "&expires="
 # (near to the user time) minus a random number of days between 10 and 266
 # the flag is returned only if the expiration time of the token minus the admin_expire_time
 # is between 290 and 300
-# we need to try to add the time randomly subtracted by the server on the admin_expire_time
+# we need to try to add a time to the actual time in order to get a valid subtraction with the admin_expire_time
 for i in range((290 - 266), (300 - 10)):
-    #print(i)
+    print(i)
     offset = str(now_time + i * (24 * 60 * 60)).encode()
 
     mod = bytearray()
-    for a, b, c in zip(offset, keydate_cipher, date):
+    for a, b, c in zip(offset, date, keydate_cipher):
         mod.append(a ^ b ^ c)
 
     cookie_tosend = cookie[:19] + mod + cookie[29:]
     cookie_tosend = bytes_to_long(cookie_tosend)
 
     response = session.get(f'http://130.192.5.212:6522/flag?nonce={nonce}&cookie={cookie_tosend}')
-    print(response.content)
 
+    if response.content != b'You have expired!':
+        print(response.content)
+        break

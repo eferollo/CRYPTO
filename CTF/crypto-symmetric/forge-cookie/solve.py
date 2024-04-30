@@ -20,7 +20,7 @@ plain_token = server.recvline().decode().strip().split("> ")[1]
 plain_token = bytearray(plain_token.encode())
 print(plain_token)
 
-# nonce + token
+# nonce + token (nonce.token)
 rec_data = server.recvline().decode().strip().split(": ")[1]
 nonce, enc_token = rec_data.split(".")
 print("Nonce= " + nonce)
@@ -38,13 +38,18 @@ server.sendline("flag".encode())
 # skip "What is your token"
 print(server.recvline().decode())
 
+# if we xor enc_token and plain_token we get the keystream back
+# by xoring again with the mod json we apply the keystream on it as if it was applied on the server
+# this is possible because then we use the same nonce to decrypt (and the same key on the server) -> same keystream
 token = bytearray()
 for t_b, p_b, m_b in zip(enc_token, plain_token, mod):
     token.append(t_b ^ m_b ^ p_b)
 
+# put together nonce and token in the format nonce.token
 token = base64.b64encode(token).decode()
 tosend = f"{nonce}.{token}"
 print(tosend)
+
 # send token to the server
 server.sendline(tosend.encode())
 for output in server.recvlines(3):

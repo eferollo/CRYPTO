@@ -17,7 +17,7 @@ ciphertexts = []
 with open("file.enc", "rb") as f:
     while True:
         line = f.read(KEYSTREAM_SIZE)
-        if not line:
+        if not line:   # line = b''
             break
         ciphertexts.append(line)
 

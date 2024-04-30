@@ -28,8 +28,8 @@ secret_len = len("CRYPTO23{}") + 36
 print(secret_len)
 blocks_size = ceil(secret_len / AES.block_size) * AES.block_size  # blocks needed to fit the secret with AES
 
-
-for j in range(1,15):
+# the server applies a random padding between 1 and 15 -> try a different padding to add in front of the message
+for j in range(1,16):
     server_pad = j
     secret = b''
     # for each char of the secret

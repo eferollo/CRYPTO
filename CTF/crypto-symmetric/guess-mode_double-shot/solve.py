@@ -8,6 +8,7 @@ server = pwn.remote("130.192.5.212", 6532)
 challenge = server.recvline().decode()
 print(challenge)
 
+# data to send must be 32 bytes long
 tosend = b"A" * 32
 
 for i in range(128):
