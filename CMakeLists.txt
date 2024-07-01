@@ -38,3 +38,13 @@ add_executable(CTF_first_dec CTF/openssl-enc/dec1_firstdec.c)
 add_executable(CTF_guess_algo CTF/openssl-enc/dec1_guessalgo.c)
 
 add_executable(CTF_guess_what CTF/openssl-asym/guess_what.c)
+
+# EXAMS
+
+add_executable(EXAM_rsa_send EXAMS/C/2020-09-18_RSA_1MB.c)
+add_executable(EXAM_dh EXAMS/C/2020-07-19_DH.c)
+add_executable(EXAM_noncense EXAMS/C/2021-07-02_NONCENSE.c)
+add_executable(EXAM_process EXAMS/C/process.c)
+add_executable(EXAM_hmac EXAMS/C/hmac.c)
+add_executable(EXAM_crazy-protocol EXAMS/C/crazy_protocol.c)
+add_executable(EXAM_sign-protocol EXAMS/C/sign_protocol.c)
