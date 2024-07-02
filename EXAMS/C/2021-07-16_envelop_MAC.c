@@ -76,5 +76,9 @@ int envelop_MAC(RSA *rsa_keypair, char *message, int message_len, char *key, int
     }
 
     memcpy(result, encrypted_data, encrypted_data_len);
+
+    CRYPTO_cleanup_all_ex_data();
+    ERR_free_strings();
+
     return 0;
 }
