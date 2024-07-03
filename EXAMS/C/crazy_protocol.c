@@ -98,15 +98,25 @@ int main()
 
     char *k1_hex = BN_bn2hex(k1);
     char *k2_hex = BN_bn2hex(k2);
+    char k1_bin[strlen(k1_hex)/2], k2_bin[strlen(k2_hex)/2];
 
-    if (!EVP_CipherInit(enc_ctx, EVP_aes_128_cbc(), (unsigned char *) k1_hex, NULL, ENCRYPT)) {
+    int i;
+    for (i = 0; i < strlen(k1_hex)/2; i++) {
+        sscanf(&k1_hex[2*i], "%2hhx", &k1_bin[i]);
+    }
+
+    for (i = 0; i < strlen(k2_hex)/2; i++) {
+        sscanf(&k2_hex[2*i], "%2hhx", &k2_bin[i]);
+    }
+
+    if (!EVP_CipherInit(enc_ctx, EVP_aes_128_cbc(), (unsigned char *) k1_bin, NULL, ENCRYPT)) {
         handle_errors();
     }
 
     unsigned char enc_k2[strlen(k2_hex)+16];
     int update_len, final_len, ciphertext_len = 0;
 
-    if (!EVP_CipherUpdate(enc_ctx, enc_k2, &update_len, (unsigned char *) k2_hex, strlen(k2_hex))) {
+    if (!EVP_CipherUpdate(enc_ctx, enc_k2, &update_len, (unsigned char *) k2_bin, strlen(k2_hex))) {
         handle_errors();
     }
     ciphertext_len += update_len;
