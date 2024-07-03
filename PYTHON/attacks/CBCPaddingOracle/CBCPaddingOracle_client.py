@@ -56,14 +56,16 @@ def guess_byte(p,c,ciphertext,block_size):
         # print(i)
         ca = bytearray()
         ca += ciphertext[:current_byte_index]
+        print(ca)
         ca += i.to_bytes(1,byteorder='big')
-
+        print(ca)
         # print(ca)
         for x in p:
             ca += (x ^ padding_value).to_bytes(1,byteorder='big')
+        print(ca)
         # print(ca)
         ca += get_nth_block(ciphertext,n-1,block_size)
-        # print(ca)
+        print(ca)
         # print("          "+str(ciphertext))
 
         server = remote(HOST, PORT)
