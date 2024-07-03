@@ -97,6 +97,6 @@ if __name__ == '__main__':
     c = []
     p = []
 
-    for j in range(AES.block_size-2,AES.block_size):
+    for j in range(AES.block_size-3,AES.block_size):
         plaintext[0:0] = guess_byte(p,c,ciphertext,AES.block_size)
         print(plaintext)

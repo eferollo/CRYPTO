@@ -36,7 +36,7 @@ from mydata import wrong_server_answer
 # They can contain some text and then some padding if the plaintext is not multiple of a block
 
 # Can you guess the size of the plaintext?
-# The size can be 48 bytes - 16 bytes for the IV - padding if any = 32 bytes at most, 16 bytes minimum
+# The size can be 40
 
 # What kind of attack can Mallory try to decrypt the ciphertext?
 # She can try the CBC Padding Oracle attack.
